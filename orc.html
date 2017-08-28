@@ -11,9 +11,7 @@
 
 <script src="https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js"></script>
 <script type="text/javascript">
-  var a = document.getElementById('test');
-
-  Tesseract.recognize("pdf-sample.pdf")
+  Tesseract.recognize("test.jpg")
 .then(function(result){
     console.log(result);
 });
