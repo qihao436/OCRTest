@@ -8,12 +8,15 @@
     <img id ="test"  height ="1753" width = "1241" src="test.tiff" alt="">
 
     <script src="https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js"></script>
+    <script src="gocr.js"></script>
     <script type="text/javascript">
-  Tesseract.recognize("00001.jpg",{preserve_interword_spaces:'1'})
-      
+      /*
+  Tesseract.recognize("00001.jpg",{preserve_interword_spaces:'1'})    
 .then(function(result){
     console.log(result);
-});
+});*/
+      var string = GOCR("00001.jpg");
+alert(string);
 </script>
   </body>
 </html>
