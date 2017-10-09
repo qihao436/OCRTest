@@ -8,7 +8,7 @@
     <script src="https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js"></script>
     
     <script type="text/javascript">
-    window.Tesseract = Tesseract.create({ langPath: "https://github.com/qihao436/OCRTest/raw/master/" });
+    window.Tesseract = Tesseract.create({ langPath: "./" });
   Tesseract.recognize("00001.jpg",{preserve_interword_spaces:'1',lang:"eng1"})    
 .then(function(result){
     console.log(result);
