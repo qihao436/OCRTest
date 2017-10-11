@@ -8,7 +8,7 @@
     <script src="https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js"></script>
     
     <script type="text/javascript">
-    window.Tesseract = Tesseract.create({ langPath: "/traindata/" });
+    window.Tesseract = Tesseract.create({ langPath: "traindata/" });
   Tesseract.recognize("00001.jpg",{preserve_interword_spaces:'1'})    
 .then(function(result){
     console.log(result);
