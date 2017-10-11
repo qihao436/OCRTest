@@ -9,7 +9,7 @@
     
     <script type="text/javascript">
     window.Tesseract = Tesseract.create({ langPath: "./" });
-  Tesseract.recognize("00001.jpg",{preserve_interword_spaces:'1'})    
+  Tesseract.recognize("00001.jpg",{preserve_interword_spaces:'1', lang:'eng1'})    
 .then(function(result){
     console.log(result);
 });
